@@ -1,0 +1,277 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: sans-serif;
+  text-decoration: none;
+  color: whitesmoke;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-image: url(../images/bacground.png);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* ------------ navbar begenin ------------*/
+
+.nav ul {
+  overflow: hidden;
+  width: 80%;
+}
+
+.nav ul a {
+  float: right;
+  padding: 30px;
+  list-style: none;
+  transition: all ease 0.45s;
+}
+
+.nav ul a:hover {
+  padding: 30px 40px;
+  /* length extention */
+  background-color: #219ebc;
+}
+
+/* ------------ navbar end ------------*/
+
+/* ------------ slide ------------*/
+.warper::-webkit-scrollbar {
+  display: none;
+}
+
+.warper {
+  height: calc(100vh - 20px);
+  overflow: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+}
+
+.warper2 {
+  width: calc(100vw * 5 + 10px);
+}
+
+.red {
+  float: left;
+  height: calc(100vh - 20px);
+  width: 100vw;
+  scroll-snap-align: start;
+}
+
+/* ------------ slide-end ------------*/
+
+/* ------------ 1st beg ------------*/
+
+.red {
+  overflow: hidden;
+}
+.red .text,
+.red .imag {
+  float: left;
+} /*split in two*/
+
+.red .text {
+  width: 50vw;
+}
+.text .Unlock{
+  font-size: 40px;
+  width: 70vw;
+  margin: 5vh 10vw;
+}
+
+
+
+
+
+.imag {
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 50vw;
+  position: relative;
+  animation: back 6s ease-in ;
+  animation-iteration-count: infinite;
+}
+
+
+
+@keyframes back {
+  0% {
+    background-image: url(../images/Mask\ group.png);
+  }
+  
+  50%{
+    background-image: url(../images/Frame\ 412.png);
+  }
+  
+  100% {
+    background-image: url(../images/Mask\ group.png);
+
+  }
+}
+
+.imag img {
+  position: absolute;
+}
+
+.imag .i1 {
+  animation: jump-1 2s ease-in forwards;
+  animation-iteration-count: infinite;
+}
+.imag .i2 {
+  animation: jump-2 4s ease-in forwards;
+  animation-iteration-count: infinite;
+}
+.imag .i3 {
+  animation: jump-3 3s ease-in forwards;
+  animation-iteration-count: infinite;
+}
+
+
+
+
+
+@keyframes jump-1 {
+  0% {
+    top: 70px;
+    left:70px;
+  }
+  5% {
+    top: 70px;
+    left: 70px;
+  }
+  50%{
+    top: 100px;
+    left: 100px;
+  }
+  55%{
+    top: 100px;
+    left: 100px;
+  }
+  100% {
+    top: 70px;
+    left: 70px;
+  }
+}
+
+
+
+@keyframes jump-1 {
+  0% {
+    top: 70px;
+    left:70px;
+  }
+  5% {
+    top: 70px;
+    left: 70px;
+  }
+  50%{
+    top: 100px;
+    left: 100px;
+  }
+  55%{
+    top: 100px;
+    left: 100px;
+  }
+  100% {
+    top: 70px;
+    left: 70px;
+  }
+}
+@keyframes jump-2 {
+  0% {
+    bottom: 40px;
+    left: 40px;
+  }
+  5% {
+    bottom: 40px;
+    left: 40px;
+  }
+  50%{
+    bottom: 0px;
+    left: 0px;
+  }
+  55%{
+    bottom: 0px;
+    left: 0px;
+  }
+  100% {
+    bottom: 40px;
+    left: 40px;
+  }
+}
+@keyframes jump-3 {
+  0% {
+    top: 50%;
+    right: 50px;
+  }
+  5% {
+    top: 50%;
+    right: 50px;
+  }
+  50%{
+    top: 20%;
+    right: 0px;
+  }
+  55%{
+    top: 20%;
+    right: 0px;
+  }
+  100% {
+    top: 50%;
+    right: 50px;
+  }
+}
+
+/* ------------ 1st end ------------*/
+
+/* ------------ 2nd beg ------------*/
+.nd {
+  overflow: hidden;
+}
+.nd .part2,
+.part1 {
+  float: left;
+  width: 50vw;
+}
+
+.nd .part2 img {
+  display: block;
+  margin: auto;
+}
+.nd .sttext {
+  font-size: 45px;
+  font-weight: bold;
+  padding: 10vh;
+}
+.nd .text {
+  font-size: 25px;
+  padding: 0 10vh;
+}
+/* ------------ 2nd-end ------------*/
+.rd {
+  overflow: hidden;
+}
+.rd .p1 {
+  float: left;
+  width: 40svw;
+  height: 100%;
+}
+.rd .p2 {
+  float: left;
+  padding: 29vh 0px;
+  font-size: 30px;
+  width: 60%;
+  height: 100%;
+}
+.rd .p1 h1 {
+  margin-top: 10vh;
+  text-align: center;
+}
+
+.img {
+  display: block;
+  margin: auto;
+  margin-top: 5vh;
+}

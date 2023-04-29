@@ -1,0 +1,33 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+
+.sv{
+  margin-top: 20vh;
+}
+
+.sv svg path {
+  stroke-width: 50;
+  stroke: #000078;
+  stroke-dasharray: 4500;
+  stroke-dashoffset: 0;
+  animation: hor 2s linear forwards;
+  animation-iteration-count: infinite;
+}
+
+@keyframes hor {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  40% {
+    stroke-dashoffset: 4500;
+  }
+  80% {
+    stroke-dashoffset: 9000;
+  }
+  100% {
+    stroke-dashoffset: 9000;
+  }
+}
